@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
+
+    <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <title>Campos de checagem</title>
+</head>
+<body>
+    <div class="container p-5">
+        <div class="mb-3 form-check">
+            <input type="checkbox" name="" id="novo" class="form-check-input">
+            <label for="novo" class="form-check-label">Produto</label>
+        </div>
+        <hr>
+        <div class="mb-3 form-check form-check-inline">
+            <input type="radio" name="estado" id="novo" class="form-check-inline" value="novo">
+            <label for="novo" class="form-check-label">Produto novo</label>
+        </div>
+        <!-- o form-check também pode ser reverse para mudar os botões de lugar -->
+        <div class="mb-3 form-check form-check-inline">
+            <input type="radio" name="estado" id="novo" class="form-check-inline" value="usado">
+            <label for="novo" class="form-check-label">Produto usado</label>
+        </div>
+        <hr>
+        <div class="mb-3 form-switch">
+            <input type="checkbox" name="" id="novo" class="form-check-input">
+            <label for="novo" class="form-check-label">Produto</label>
+        </div>
+        <hr>
+        <div class="mb-3">
+            <input type="radio" name="tipoEntrega" id="entregaRapida" class="btn-check">
+            <!-- também pode usar o btn-outline-primary -->
+            <label for="entregaRapida" class="btn btn-outline-primary">Entrega rápida</label>
+        </div>
+        <div class="mb-3">
+            <input type="radio" name="tipoEntrega" id="entregaNormal" class="btn-check">
+            <!-- também pode usar o btn-outline-primary -->
+            <label for="entregaNormal" class="btn btn-outline-primary">Entrega normal</label>
+        </div>
+    </div>
+    <hr>
+        <p class="text-center"><a href="../index.html" class="btn btn-outline-primary btn-lg">Voltar</a></p>
+</body>
+</html>

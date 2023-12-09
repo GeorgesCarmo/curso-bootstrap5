@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
+
+    <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <style>
+        div.border{
+            height: 150px;
+        }
+    </style>
+    <title>Visibilidade</title>
+</head>
+<body>
+    <div class="p-5 bg-danger"></div>
+    <!-- A classe d- também é responsiva
+    se quiser as 3 na mesma linha usar o inline -->
+    <div class="p-4 col-3 d-none d-md-block m-3 bg-primary"></div>
+    <div class="p-4 col-3 d-block d-md-none m-3 bg-success"></div>
+    <div class="p-4 col-3 d-inline-block m-3 bg-warning"></div>
+
+    <header class="p-3 text-bg-dark d-print-none">
+        <!-- d-print-none serve para não imprimir o cabeçalho -->
+        <div class="container">
+            <h1 class="display-1">Cabeçalho</h1>
+        </div>
+    </header>
+    <article class="container my-3">
+        <h1 class="mb-4">Título do Artigo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus accusantium a exercitationem ipsa adipisci. Aliquam odit facilis et inventore quia impedit, ipsa architecto amet, ut quaerat eum veritatis odio atque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis non, in expedita voluptatum eaque commodi asperiores consectetur esse molestiae dignissimos eius voluptatibus tenetur sunt, dolore, dolores odit consequuntur pariatur facilis!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda animi autem ut, inventore error tenetur cum, doloribus perspiciatis dolor pariatur dolorem in repellendus temporibus aspernatur iure voluptas ad perferendis ratione.</p>
+        <p class="d-none d-print-block">Fonte: meusite.com</p>
+    </article>
+    <hr>
+
+    <div class="p-4 col-3 m-3 bg-primary"></div>
+    <!-- o invisible diferente do none vai deixar o espaço ocupado pela div -->
+    <div class="p-4 col-3 m-3 bg-success invisible"></div>
+    <div class="p-4 col-3 m-3 bg-warning"></div>
+
+    <hr>
+
+    <div class="container bg-info mt-3">
+        <div class="row">
+            <div class="border p-2 col-3 overflow-auto">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem corrupti laudantium perferendis, inventore sint quia dolores aliquam sequi placeat nihil sapiente vitae laborum non veritatis atque doloremque necessitatibus iure temporibus?
+            </div>
+            <div class="border p-2 col-3 overflow-hidden">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae ex fugiat alias. Ratione non temporibus totam iure, animi recusandae quaerat amet numquam incidunt a fugit. Possimus reiciendis autem vel?</div>
+            <div class="border p-2 col-3 visible">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet temporibus cupiditate facilis tenetur iusto necessitatibus reiciendis, minima veniam blanditiis voluptatibus expedita accusamus illum inventore vero, quos recusandae nostrum cumque labore.</div>
+            <div class="border p-2 col-3 overflow-scroll">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aliquam at ab non expedita dolorum facilis molestias, tempora reiciendis, soluta, dolore aliquid quia nobis voluptas sit id minima. Qui, laboriosam.</div>
+        </div>
+    </div>
+
+    <hr>
+    <h3 class="text-center"><a href="../index.html" class="link-dark"><i class="bi-arrow-return-left text-info" style="font-size: 50px;"></i></a></h3>
+</body>
+</html>
